@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Trivia Game</title>
+
+    <!-- css reset -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <!-- Font Awesome -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css' integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ'
+        crossorigin='anonymous'>
+
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO'
+        crossorigin='anonymous'>
+
+    <!-- Override CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="game-jumbo" class="jumbotron text-center mt-5">
+                    <h1 id="game-text">Music Trivia Game</h1>
+                    <button id="start-button" class="btn"> START</button>
+                    <!-- Col div -->
+                </div>
+            </div>
+            <!-- row div  -->
+        </div>
+        <div id="secondRow" class="row collapse">
+            <div id="question" class="col">
+
+                <div id="questionDiv" class="jumbotron text-center">
+                    <h1 id=question-text> </h1>
+                </div>
+                <!-- Question Col -->
+            </div>
+            <!-- Row 2 div -->
+        </div>
+        <div id="thirdRow" class="row">
+            <div id="answers" class="col collapse">
+                <div id="answer-jumbo" class="jumbotron text-center mt-2">
+
+                <!-- Answer buttons -->
+                <button data-question="" class="answers"></button>
+                <button data-question="" class="answers"></button>
+                <button data-question="" class="answers"></button>
+                <button data-question="" class="answers"></button>
+                <!-- Answer Jumbo -->
+                </div>
+                <!-- Answer Col -->               
+            </div>
+            <!-- Third row -->
+        </div>
+        <div id="game-stats" class="row collapse">
+            <div class="col">
+                <p id="correctAnswers"> </p>
+                <p id="incorrectAnswers"> </p>
+                <p id="notAnswered"> </p>
+                <!-- col -->
+            </div>
+            <!-- 4th row (stats) -->
+        </div>
+        <!-- Container div -->
+    </div>
+    <!-- jQuery -->
+    <script src='https://code.jquery.com/jquery-3.3.1.js' integrity='sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=' crossorigin='anonymous'></script>
+
+    <!-- Bootstrap scripts -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js' integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49'
+        crossorigin='anonymous'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js' integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy'
+        crossorigin='anonymous'></script>
+
+    <script src="assets/js/trivia.js"></script>
+</body>
+
+</html>
