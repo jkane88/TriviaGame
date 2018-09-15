@@ -1,5 +1,5 @@
 body {
-    background-image: url("assets/images/musicbg.jpg");
+    background-image: URL("../images/musicbg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
